@@ -1,0 +1,12 @@
+Paste the command below in the terminal directory where the ugly.json file is located :- 
+
+cat ugly.json | python -mjson.tool > pretty.json
+
+
+OR for pretty JSON formatting of the output of an API use :-
+
+curl -s http://localhost:3000 | python -m json.tool
+
+saving the result to a new json:-
+
+curl -s http://localhost:3000 | python -m json.tool >pretty.json 
